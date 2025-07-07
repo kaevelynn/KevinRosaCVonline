@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relógio Digital</title>
+  <style>
+    body {
+      background-color: #f2e6d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .relogio {
+      background-color: #fff8f0;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .hora {
+      font-size: 3em;
+      color: #6b4e34;
+      letter-spacing: 2px;
+    }
+
+    .data {
+      font-size: 1.2em;
+      color: #a2674c;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="relogio">
+    <div class="hora" id="hora">00:00:00</div>
+    <div class="data" id="data">00/00/0000</div>
+  </div>
+
+  <script>
+    function atualizarRelogio() {
+      const agora = new Date();
+
+      const horas = agora.getHours().toString().padStart(2, '0');
+      const minutos = agora.getMinutes().toString().padStart(2, '0');
+      const segundos = agora.getSeconds().toString().padStart(2, '0');
+
+      const dia = agora.getDate().toString().padStart(2, '0');
+      const mes = (agora.getMonth() + 1).toString().padStart(2, '0');
+      const ano = agora.getFullYear();
+
+      document.getElementById('hora').textContent = `${horas}:${minutos}:${segundos}`;
+      document.getElementById('data').textContent = `${dia}/${mes}/${ano}`;
+    }
+
+    setInterval(atualizarRelogio, 1000);
+    atualizarRelogio();
+  </script>
+</body>
+</html>

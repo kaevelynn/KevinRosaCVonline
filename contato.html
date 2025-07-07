@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+    
+</head >
+<body>  
+    <h1 class="nome">Contato</h1> 
+        <!-- Título da seção de contato -->
+
+        <div class="Dados">
+            <div class="desc">
+                <ul>
+                      <!-- Lista com links para redes sociais -->
+                     <a href="https://wa.me/5551980444438">Whatsapp</a>
+                     <a href="https://www.instagram.com/kevineduardorosa/">Instagram</a>
+                     <a href="https://open.spotify.com/user/21al2tayqu6s2lxylleawxzfy?si=7bcfa3ec7e8a441a">Spotify</a>
+                </ul>
+            <br><br><br>
+            
+            <!-- Texto pedindo sugestões -->
+            Deixe uma Sugestão do que posso estudar para começar essa jornada no curso(ADS)
+
+            <!-- Campo de texto para mensagem -->
+            <input class="input-personalizado" type="text" placeholder="Mensagem...">
+
+            <!-- Botão para abrir o pop-up de aviso -->
+            <button class="botao-enviar" onclick="abrirPopup()">Enviar</button>
+
+            <!-- Caixa de pop-up explicando que o formulário não está funcional ainda -->
+            <div id="popup" class="popup">
+            <div class="popup-conteudo">
+                <!-- Botão para fechar o pop-up -->
+                <span class="fechar" onclick="fecharPopup()">&times;</span>
+                
+                <!-- Mensagem dentro do pop-up -->
+                <p>
+                Ainda estou aprendendo a utilizar html, css e javascript,
+                então não sei como receber essa mensagem, se for importante mesmo,
+                entre em contato cmg :)
+                </p>
+
+                <!-- Script para abrir e fechar o pop-up -->
+                <script>
+                function abrirPopup() {
+                    document.getElementById("popup").style.display = "block";
+                }
+
+                function fecharPopup() {
+                    document.getElementById("popup").style.display = "none";
+                }
+                </script>
+            </div>
+            </div>
+
+            <br><br><br>
+
+            <!-- Email para contato -->
+            Email para Contato: ke9476080@gmail.com
+        </div>
+        </div>
+
+        <!-- Rodapé com links para outras páginas do site -->
+        <footer class="footer">
+        <nav>
+            <ul>
+            <li><a href="PagPrincipal.html"><u>Sobre Mim</u></a></li>
+            <li><a href="portfólio.html"><u>Portfólio</u></a></li>
+            <li><a href="formação.html"><u>Formação</u></a></li> 
+            <li><a href="index.html"><u>Início</u></a></li>
+            </ul>
+        </nav>
+        </footer>
+
+    </body>
+</html>

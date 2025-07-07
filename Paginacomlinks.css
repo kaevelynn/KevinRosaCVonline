@@ -1,0 +1,58 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body{
+    background-image: url("zep\ 8.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nome{
+    color: rgb(255, 238, 217);
+    font-size: 100px;
+    text-align: center;
+    padding-top: 200px;
+    text-shadow: 2px 2px 5px rgb(2, 0, 0);
+
+}
+
+.opções{
+    font-size: 60px;
+    margin-left: 100px;
+}
+.grade {
+    height: 200px;
+    width: 1300px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(255, 228, 196, 0.7) ;
+
+}
+ul li {
+    margin-right: 20px; /* espaçamento entre os itens */
+  }
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Espaço entre os itens */
+  justify-content: center;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(255, 238, 217);
+  text-shadow: 2px 2px 5px rgb(2, 0, 0);
+  font-weight: bold;
+}
+
+nav li a:hover {
+    transition: all 1.5s;
+    color: #000000;
+    font-size: larger
+  
+}
